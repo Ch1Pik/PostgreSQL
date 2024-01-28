@@ -26,3 +26,27 @@ Insert into collection (id, name_collection, year_birthday) value (1, 'Русс�
 Insert into collection (id, name_collection, year_birthday) value (2, 'Иностранная музыка', '2003');
 Insert into collection (id, name_collection, year_birthday) value (3, 'Старая школа рока', '2005');
 Insert into collection (id, name_collection, year_birthday) value (4, 'Баллады', '2003');
+
+Insert into musician_album(id, musician_id, album_id) value (1, 1, 2);
+Insert into musician_album(id, musician_id, album_id) value (2, 2, 4);
+Insert into musician_album(id, musician_id, album_id) value (3, 4, 3);
+Insert into musician_album(id, musician_id, album_id) value (4, 5, 1);
+
+Insert into style_musician(musician_id, slyle_id) value (1, 1);
+Insert into style_musician(musician_id, slyle_id) value (2, 1);
+Insert into style_musician(musician_id, slyle_id) value (3, 3);
+Insert into style_musician(musician_id, slyle_id) value (4, 1);
+Insert into style_musician(musician_id, slyle_id) value (5, 2);
+
+Insert into musician_style(id, collection_id, record_id) value(1, 1, 3);
+Insert into musician_style(id, collection_id, record_id) value(2, 1, 4);
+Insert into musician_style(id, collection_id, record_id) value(3, 1, 7);
+Insert into musician_style(id, collection_id, record_id) value(4, 1, 8);
+Insert into musician_style(id, collection_id, record_id) value(5, 2, 1);
+Insert into musician_style(id, collection_id, record_id) value(6, 2, 2);
+Insert into musician_style(id, collection_id, record_id) value(7, 2, 5);
+Insert into musician_style(id, collection_id, record_id) value(8, 2, 6);
+Insert into musician_style(id, collection_id, record_id) value(9, 4, 7);
+Insert into musician_style(id, collection_id, record_id) value(10, 4, 8);
+Insert into musician_style(id, collection_id, record_id) value(11, 3, 3);
+Insert into musician_style(id, collection_id, record_id) value(12, 3, 4);
