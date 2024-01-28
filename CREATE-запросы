@@ -31,7 +31,7 @@ create table if not exists Musician_Album (
 create table if not exists Track (
 	id serial primary key,
 	name_record varchar(150) not null,
-	length integer check(length>0) not null,
+	length float4 check(length>0) not null,
 	album_id integer references Album(id)
 );
 
