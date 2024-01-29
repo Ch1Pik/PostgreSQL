@@ -16,16 +16,7 @@ where not nickname like '%% %%';
 
 -- Название треков, которые содержат слово «мой» или «my».
 select name_record from track
-where name_record like '%%My%%';
-
-select name_record from track
-where name_record like '%%my%%';
-
-select name_record from track
-where name_record like '%%Мой%%';
-
-select name_record from track
-where name_record like '%%мой%%';
+where name_record ~~'%%My%%' or name_record ~~'%%Мой%%';
 
 -- Количество исполнителей в каждом жанре.
 select style_id as Жанр, count(*) as Колличество_песен from style_musician
